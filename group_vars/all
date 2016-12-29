@@ -1,0 +1,22 @@
+---
+ansible_connection: local
+
+cloud_map:
+  prod:
+    ob1: pob1
+    rr1: prr1
+  dev:
+    ob1: dob1
+    rr1: drr1
+  
+az_map:
+  prod:
+    ob1-1: pob1-1
+    ob1-2: pob1-2
+    rr1-1: prr1-1
+    rr1-2: prr1-2
+  dev:
+    ob1-1: dob1-1
+    ob1-2: dob1-2
+    rr1-1: drr1-1
+    rr1-2: drr1-2

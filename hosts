@@ -1,0 +1,13 @@
+[jenkins:vars]
+os_env=prod
+
+[jenkins:children]
+ob1
+
+[ob1:children]
+ob1-1
+
+[ob1-1]
+localhost jenkins_port=8080 
+; 127.0.0.1 jenkins_port=8081
+; ob1-1-jenkins-[1:1]
