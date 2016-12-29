@@ -1,0 +1,3 @@
+- src: https://github.com/therelaxist/ans-role-jenkins.git
+  version: master
+  name: jenkins
