@@ -3,4 +3,5 @@
 
 # Ansible
 *.retry
+group_vars/jenkins.yml
 roles/
