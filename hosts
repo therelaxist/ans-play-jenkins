@@ -7,7 +7,18 @@ ob1
 [ob1:children]
 ob1-1
 
-[ob1-1]
-localhost jenkins_port=8080 
-; 127.0.0.1 jenkins_port=8081
-; ob1-1-jenkins-[1:1]
+[ob1-1:children]
+jenkins-master-ob1-1
+jenkins-slave-ob1-1
+
+[jenkins-master:children]
+jenkins-master-ob1-1
+
+[jenkins-slave:children]
+jenkins-slave-ob1-1
+
+[jenkins-master-ob1-1]
+127.0.0.1 jenkins_port=8080
+
+[jenkins-slave-ob1-1]
+Tushars-MacBook-Pro-2.local
