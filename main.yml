@@ -2,10 +2,10 @@
 - hosts: all:!local
   vars_prompt:
     - name: jenkins_admin_user
-      prompt: "Enter jenkins admin user if previously configured from the UI (blank for admin)"
+      prompt: "Enter jenkins admin user if previously configured (blank if first time or for 'admin')"
       private: no
     - name: jenkins_admin_passwd
-      prompt: "Enter jenkins admin password if previously configured from the UI (blank for default)"
+      prompt: "Enter jenkins admin password/jenkins-token if previously configured (blank for first time)"
       private: yes
   roles:
     - jenkins
